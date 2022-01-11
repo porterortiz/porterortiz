@@ -4765,9 +4765,11 @@ body.minimal {
   min-height: 100vh;
 }
 .hero-full-container .hero-full-wrapper .text-content {
-  vertical-align: middle;
+  vertical-align: top;
   display: table-cell;
-  padding: 15px;
+  padding-top: 290px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .white-text-container h1,
 .white-text-container h2,
