@@ -18,7 +18,9 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  margin-top: auto;
+}
 header,
 hgroup,
 main,
@@ -45,6 +47,8 @@ template {
 }
 a {
   background-color: transparent;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }
 a:active,
 a:hover {
@@ -263,10 +267,13 @@ html {
 }
 body {
   font-family:Helvetica;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.78;
   color: #000;
   background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 button,
 input,
@@ -448,7 +455,7 @@ h2 {
 }
 .h3,
 h3 {
-  font-size: 20px;
+  font-size: 23px;
 }
 .h4,
 .h5,
@@ -589,6 +596,7 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 9.5px;
+  font-size: 20px;
 }
 ol ol,
 ol ul,
@@ -673,7 +681,7 @@ blockquote small {
   color: #777;
 }
 blockquote .small:before,
-blockquote footer:before,
+blockquote footer:before
 blockquote small:before {
   content: "\2014   \A0";
 }
@@ -4765,11 +4773,10 @@ body.minimal {
   min-height: 100vh;
 }
 .hero-full-container .hero-full-wrapper .text-content {
-  vertical-align: top;
+  vertical-align: middle;
   display: table-cell;
-  padding-top: 290px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px
 }
 .white-text-container h1,
 .white-text-container h2,
@@ -4957,6 +4964,8 @@ textarea {
 @media (max-width: 992px) {
   .address-container {
     margin-top: 20px;
+    margin-left: -2.0em;
+    margin-right: -2.0em;
   }
 }
 .card-container {
